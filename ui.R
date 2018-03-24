@@ -2,6 +2,9 @@ library(shiny)
 library(plotly)
 
 #require("plotly")
+
+
+
 ui <- fluidPage(
   
   # App title ----
@@ -13,8 +16,11 @@ ui <- fluidPage(
     # Sidebar panel for inputs ----
     sidebarPanel(
       
-      fileInput('MySpectrum', 'Select the spectrum to evaluate:',
-                accept=c('csv','.csv'))
+      selectInput("BackgroundSpectrum", "Select background spectrum to use:", 
+                  c("Spectrum1", "Spectrum2", "Spectrum3", "Spectrum4", "Spectrum5")),
+      selectInput("SampleSpectrum", "Select sample spectrum to use:", 
+                  c("Spectrum1", "Spectrum2", "Spectrum3", "Spectrum4", "Spectrum5"),
+                  selected = "Spectrum5")
     ),
     
     
@@ -22,7 +28,8 @@ ui <- fluidPage(
     mainPanel(
       
       # Output: Histogram ----
-      plotlyOutput(outputId = "SpectrumPlot")
+      plotlyOutput(outputId = "SpectrumPlot"),
+      plotlyOutput(outputId = "ProcessedPlot")
       
     )
   )
