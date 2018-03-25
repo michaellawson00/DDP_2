@@ -5,9 +5,9 @@ account: michaelalanlawson
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 306413
-bundleId: 1285118
+bundleId: 1286866
 url: https://michaelalanlawson.shinyapps.io/MAL_Spectrum_Viewer/
-when: 1521844249.11001
+when: 1521977463.80152
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .RData|Genogram.R|Shiny.R|spectra.csv.xlsx
+ignoredFiles: .RData|help.html|help.md|README.md|spectra1.csv|useful.R
