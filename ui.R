@@ -13,7 +13,8 @@ ui <- fluidPage(
     sidebarPanel(h4("Description", align = "left"),
                   p("The transmission spectum viewer takes two raw input spectra,
                    plots them in a plotly chart called \"Raw Input\" then divides the sample spectrum
-                   by the background spectrum to give the samples \"Transmission Spectrum\", shown in a second chart.
+                   by the background
+spectrum to give the samples \"Transmission Spectrum\", shown in a second chart.
                    "),
                  h4("Instructions", align = "left"),
                  p("Select from pre-stored sample and background spectra using the list inputs below.
